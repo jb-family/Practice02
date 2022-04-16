@@ -3,7 +3,7 @@ package com.javaex.practice;
 import java.util.Scanner;
 
 public class Ex12 {
-
+//  	------------------------- 첫번째 방법 .equals() 메소드 이용 --------------------
 	public static void main(String[] args) {
 	Scanner sc = new Scanner(System.in);
 	System.out.println("출력되는 내용을 입력하세요");
@@ -36,7 +36,25 @@ public class Ex12 {
 	}else {
 		System.out.println("계산할 수 없는 기호입니다.");
 	}
-	// .equals은 ppt에서 안나왔으나.. 검색하여 결과 값 산출....
+	//  ------------------------- 두번째 방법 switch문 이용 --------------------
+	/*
+	switch (sign) {
+	case "+" : System.out.println("결과는 " + plus);
+	break;
+	case "-" : System.out.println("결과는 " + mius);
+	break;
+	case "*" : System.out.println("결과는 " + multi);
+	break;
+	case "/" : if(num1 != 0) { System.out.println("결과는 " + div);
+				}
+				else {
+					System.out.println("계산할 수 없습니다.");
+					}
+	break;
+	default : System.out.println("계산할 수 없는 기호입니다.");
+	}
+	*/
+	
 	
 	sc.close();
 	}
